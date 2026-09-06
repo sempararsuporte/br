@@ -1,3 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Atendimento SEM PARAR</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #f5f5f5, #e9e9e9);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #222;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 520px;
+      background: #fff;
+      border-radius: 20px;
+      padding: 45px 30px;
+      text-align: center;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+    }
+
+    .logo {
+      font-size: 34px;
+      font-weight: 900;
+      color: #111;
+      margin-bottom: 15px;
+      letter-spacing: -1px;
+    }
+
+    .logo span {
+      color: #e30613;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 12px;
+      color: #222;
+    }
+
+    .subtitle {
+      font-size: 17px;
+      line-height: 1.5;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #e9f9ee;
+      color: #16853b;
+      padding: 9px 16px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      background: #20c463;
+      border-radius: 50%;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(32, 196, 99, 0.5);
+      }
+
+      70% {
+        box-shadow: 0 0 0 10px rgba(32, 196, 99, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(32, 196, 99, 0);
+      }
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      padding: 17px 20px;
+      background: #e30613;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      transition: 0.2s ease;
+      box-shadow: 0 5px 15px rgba(227, 6, 19, 0.25);
+    }
+
+    .button:hover {
+      background: #c9000b;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(227, 6, 19, 0.35);
+    }
+
+    .button:active {
+      transform: translateY(0);
+    }
+
+    .footer {
+      margin-top: 25px;
+      font-size: 13px;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="logo">
+      SEM <span>PARAR</span>
+    </div>
+
+    <div class="status">
+      <span class="status-dot"></span>
+      Atendimento disponível
+    </div>
+
+    <h1>Atendimento SEM PARAR</h1>
+
+    <p class="subtitle">
+      Precisa de ajuda?<br>
+      Clique no botão abaixo para solicitar atendimento.
+    </p>
+
+    <a
+      class="button"
+      href="https://api.whatsapp.com/send/?phone=5541992281281&text=Gostaria+de+falar+com+um+atendente.&type=phone_number&app_abse"
+    >
+      CLIQUE AQUI PARA SOLICITAR ATENDIMENTO
+    </a>
+
+    <div class="footer">
+      Atendimento online • Fale com um atendente
+    </div>
+
+  </div>
+
+</body>
+</html>
+
 <script>
   window.location.href = "https://api.whatsapp.com/send/?phone=5541992281281&text=Gostaria+de+falar+com+um+atendente.&type=phone_number&app_abse";
 </script>
